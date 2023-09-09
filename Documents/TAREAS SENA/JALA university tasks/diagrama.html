@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .component {
+            width: 150px;
+            height: 70px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: 70px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .component .label {
+            font-weight: bold;
+        }
+
+        .arrow {
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 50%;
+        }
+
+        .arrow:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="component">
+        <div class="label">Cliente</div>
+    </div>
+    <div class="component">
+        <div class="label">Interfaz Web</div>
+    </div>
+    <div class="component">
+        <div class="label">Controlador</div>
+    </div>
+    <div class="component">
+        <div class="label">Gestor de Usuarios</div>
+    </div>
+    <div class="component">
+        <div class="label">Gestor de Productos</div>
+    </div>
+    <div class="component">
+        <div class="label">Servicio de Autenticación y Autorización</div>
+    </div>
+    <div class="component">
+        <div class="label">Servicio de Gestión de Inventario</div>
+    </div>
+    <div class="component">
+        <div class="label">Base de Datos de Usuarios</div>
+    </div>
+    <div class="component">
+        <div class="label">Base de Datos de Productos</div>
+    </div>
+    <div class="component">
+        <div class="label">Gestor de Documentos</div>
+    </div>
+    <div class="component">
+        <div class="label">Servicio de Sesiones de Administración</div>
+    </div>
+    <div class="component">
+        <div class="label">Base de Datos de Documentos</div>
+    </div>
+    <div class="component">
+        <div class="label">Base de Datos de Sesiones de Administración</div>
+    </div>
+
+    <div class="arrow"></div>
+    <div class="arrow"></div>
+    <div class="arrow"></div>
+    <div class="arrow"></div>
+    <div class="arrow"></div>
+    <div class="arrow"></div>
+    <div class="arrow"></div>
+    <div class="arrow"></div>
+    <div class="arrow"></div>
+    <div class="arrow"></div>
+    <div class="arrow"></div>
+
+    <script>
+        const components = document.getElementsByClassName('component');
+        const arrows = document.getElementsByClassName('arrow');
+
+        const componentWidth = components[0].offsetWidth;
+        const arrowWidth = arrows[0].offsetWidth;
+
+        for (let i = 
